@@ -1,0 +1,18 @@
+{{ block title }}
+    Results
+{{ endblock }}
+
+{{ block content }}
+    {{if player.question == "A"}}
+        Sie haben sich für Intervall A entschieden.
+        Ihre Inflationserwartung leigt zwischen {{min_expectation}} und {{mid_point}}. Vielen Dank für Ihre Teilnahme.
+
+    {{else}}
+        Sie haben sich für Intervall B entschieden.
+        Ihre Inflationserwartung leigt zwischen {{mid_point}} und {{max_expectation}}. Vielen Dank für Ihre Teilnahme.
+
+    {{endif}}
+
+{{ endblock }}
+
+
