@@ -1,0 +1,9 @@
+{{ block title }}
+    Inflationserwartung im 25%-Quartil
+{{ endblock }}
+{{ block content }}
+    Liegt Ihre Inflationserwartung im Intervall A (zwischen  {{min_expectation}} und {{midpoint_q25}}) oder im Intervall B (zwischen {{midpoint_q25}} und {{mid_point}})?
+    {{ formfields }}
+    {{ next_button }}
+
+{{ endblock }}

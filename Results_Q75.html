@@ -1,0 +1,16 @@
+{{ block title }}
+    Results 75%-Quartil
+{{ endblock }}
+
+{{ block content }}
+    {{if player.question == "A"}}
+        Sie haben sich für Intervall A entschieden.
+        Ihre Inflationserwartung liegt zwischen {{mid_point}} und {{midpoint_q75}}. Vielen Dank für Ihre Teilnahme.
+
+    {{else}}
+        Sie haben sich für Intervall B entschieden.
+        Ihre Inflationserwartung leigt zwischen {{midpoint_q75}} und {{max_expectation}}. Vielen Dank für Ihre Teilnahme.
+
+    {{endif}}
+
+{{ endblock }}
